@@ -13,14 +13,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Test11 extends AppCompatActivity {
+public class Test2 extends AppCompatActivity {
     private Button MonButton;
     private Button MonButton2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test11);
+        setContentView(R.layout.activity_test2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -41,6 +42,7 @@ public class Test11 extends AppCompatActivity {
             }
         });
 
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,8 @@ public class Test11 extends AppCompatActivity {
             }
         });
     }
+
+
     public void openActivity2(){
         Intent MonIntent = new Intent(this, SecondActivity.class);
         startActivity(MonIntent);

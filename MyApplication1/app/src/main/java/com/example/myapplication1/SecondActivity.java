@@ -16,6 +16,7 @@ import android.widget.Button;
 public class SecondActivity extends AppCompatActivity {
 private Button SecondToMain;
 private Button test1;
+private Button test2;
 
 
     @Override
@@ -41,6 +42,14 @@ private Button test1;
             }
         });
 
+        test2 = (Button) findViewById(R.id.buttonTest2);
+        test2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View maView) {
+                openTest2();
+            }
+        });
+
 
 
 
@@ -62,6 +71,12 @@ private Button test1;
 
     public void openTest1(){
         Intent MonIntent = new Intent(this, Test11.class);
+        startActivity(MonIntent);
+        Log.i("info","Bouton enclencher");
+    }
+
+    public void openTest2(){
+        Intent MonIntent = new Intent(this, Test2.class);
         startActivity(MonIntent);
         Log.i("info","Bouton enclencher");
     }
