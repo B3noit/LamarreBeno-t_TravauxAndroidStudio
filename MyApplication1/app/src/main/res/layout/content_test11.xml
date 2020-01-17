@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Test11"
+    tools:showIn="@layout/activity_test11">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="211dp"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:text="Ouvrir la SecondActivity" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="211dp"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:text="Ouvrir la SecondActivity" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
